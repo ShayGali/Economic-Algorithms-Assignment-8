@@ -2,7 +2,7 @@ import networkx as nx
 import math
 from typing import Dict, Tuple, List, Any
 
-def vcg_shortest_path_payments(
+def vcg_cheapest_path(
         G: nx.Graph,
         source: Any,
         target: Any,
