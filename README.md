@@ -26,7 +26,7 @@ G1.add_edge("a", "d", weight=10)
 G1.add_edge("b", "c", weight=1)
 G1.add_edge("b", "d", weight=4)
 G1.add_edge("c", "d", weight=1)
-path, cost, payments = vcg_shortest_path_payments(G1, "a", "d")
+path, cost, payments = vcg_cheapest_path(G1, "a", "d")
 ```
 
 ### Output
@@ -62,7 +62,7 @@ G2 = nx.DiGraph()
 G2.add_edge("s", "v", weight=2)
 G2.add_edge("v", "t", weight=3)
 G2.add_edge("s", "t", weight=6)
-path, cost, pay = vcg_shortest_path_payments(G2, "s", "t")
+path, cost, pay = vcg_cheapest_path(G2, "s", "t")
 ```
 
 ### Output
